@@ -1,4 +1,4 @@
-git ---
+---
 id: full-node-binaries
 title: Full Node Binaries
 description: Build your next blockchain app on Polygon.
@@ -312,11 +312,7 @@ For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.ma
 
 ## Prerequisites
 
-<<<<<<< HEAD
-- One machine is needed.
-=======
 - One machine is required.
->>>>>>> 61379be3c13917b515705c8004512f859d67bbe4
 - `build-essential` installed on the Full Node machine.
 - To install:
 - `sudo apt-get install build-essential`
