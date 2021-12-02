@@ -527,5 +527,6 @@ module.exports = {
     "faq/wallet-bridge-faq",
     "faq/consensys-framework",
     "faq/widget-faq",
+    "faq/wallet-list",
   ],
 };
