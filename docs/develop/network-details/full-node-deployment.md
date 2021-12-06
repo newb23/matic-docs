@@ -53,7 +53,7 @@ Setup full node for Testnetv4/Mumbai testnet
 - Check if remote machine is reachable by running `ansible sentry -m ping`
 - For a test run to confirm if the correct remote machine / VM is configured, run the following command:
 
-    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.10 heimdall_branch=v0.2.4 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai" --list-hosts`
+    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12 heimdall_branch=v0.2.4 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai" --list-hosts`
 
     It should output the remote machine IP(s) you have configured
 
@@ -61,7 +61,7 @@ Setup full node for Testnetv4/Mumbai testnet
 
 - Setup the full node with this command:
 
-    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.10 heimdall_branch=v0.2.4 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai"`
+    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12 heimdall_branch=v0.2.4 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai"`
 
 - In case you run into any issues, delete and clean the whole setup using
 
@@ -134,7 +134,7 @@ Setup full node for Polygon mainnet
 - Check if remote machine is reachable by running `ansible sentry -m ping`
 - For a test run to confirm if the correct remote machine / VM is configured, run the following command:
 
-    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.10 heimdall_branch=v0.2.4 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts`
+    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12 heimdall_branch=v0.2.4 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts`
 
     It should output the remote machine IP(s) you have configured
 
@@ -142,7 +142,7 @@ Setup full node for Polygon mainnet
 
 - Setup the full node with this command:
 
-    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.10 heimdall_branch=v0.2.4 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"`
+    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12 heimdall_branch=v0.2.4 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"`
 
 - In case you run into any issues, delete and clean the whole setup using
 
