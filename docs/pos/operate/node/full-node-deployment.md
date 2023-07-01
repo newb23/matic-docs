@@ -1040,7 +1040,7 @@ Pay attention to default region and zone, choose ones closer to you or your cust
       export POLYGON_BOOTSTRAP_MODE=snapshot
       export POLYGON_RPC_PORT=8747
       export GCP_NETWORK_TAG=polygon
-      export EXTRA_VAR=(bor_branch=v0.3.7 heimdall_branch=v0.3.4  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=${POLYGON_NETWORK})
+      export EXTRA_VAR=(bor_branch=v0.4.0 heimdall_branch=v0.3.4  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=${POLYGON_NETWORK})
       gcloud compute firewall-rules create "polygon-p2p" --allow=tcp:26656,tcp:30303,udp:30303 --description="polygon p2p" --target-tags=${GCP_NETWORK_TAG}
       gcloud compute firewall-rules create "polygon-rpc" --allow=tcp:${POLYGON_RPC_PORT} --description="polygon rpc" --target-tags=${GCP_NETWORK_TAG}
       export INSTANCE_NAME=polygon-0
