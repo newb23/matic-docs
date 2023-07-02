@@ -589,6 +589,18 @@ For binaries:
 1. Copy the Bor keystore file to `/var/lib/bor/keystore/`
 1. Copy `password.txt` file to `/var/lib/bor/password.txt`
 
+## Bor shows "unable to whitelist checkpoint           err="missing checkpoint blocks""
+
+This is not an issue. It denotes that the node is behind the last checkpoint and there can be many reasons for that (mostly if the node is actually syncing from scratch or snapshot). 
+
+## Bor shows "Synchronisation failed, retrying"
+
+It's a generic statement that synchronization can fail due to many reasons like bad peers, timeouts, etc.
+
+## Bor shows "Peer discarded announcement"
+
+If a peer tries to serve the node with an old block, then the node doesn't accept it and it throws this message.
+
 ## How to connect to a Web Socket?
 
 Your /var/lib/bor/config.toml should have settings like this:
