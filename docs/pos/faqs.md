@@ -89,6 +89,13 @@ We currently have an easy to dive-in list for you for the Linux packages. We wil
 
 Go to `CS-2003/bor` and then run, `bash stop.sh`
 
+## To get the latest peer details
+
+bor attach bor.ipc
+# run within bor terminal:
+admin.peers.forEach(function(value){console.log(value.enode+',')})
+# Type 'exit' and enter to exit bor terminal
+
 </details>
 
 ### 3. Error: Failed to unlock account (0x...) No key for given address or file
