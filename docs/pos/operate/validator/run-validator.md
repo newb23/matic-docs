@@ -11,8 +11,8 @@ keywords:
   - node
   - validator
   - sentry
-image: https://matic.network/banners/matic-network-16x9.png
 ---
+
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -24,7 +24,7 @@ follow the [Validator Node System Requirements](validator-node-system-requiremen
 
 :::tip Snapshots
 Steps in this guide involve waiting for the **Heimdall** and **Bor** services to fully sync.
-This process takes several days to complete. Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](/docs/operate/snapshot-instructions-heimdall-bor).
+This process takes several days to complete. Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](/pos/reference/snapshot-instructions-heimdall-bor.md).
 
 For snapshot download links, see [<ins>Polygon Chains Snapshots</ins>](https://snapshot.polygon.technology/).
 :::
@@ -70,8 +70,6 @@ This guide will walk you through running a Polygon validator node from binaries.
 
 For system requirements, follow the [Validator Node System Requirements](validator-node-system-requirements.md) guide.
 
-If you would like to start and run the validator node through Ansible, see [Run a Validator Node with Ansible](run-validator-ansible.md).
-
 :::caution
 
 There is limited space for accepting new validators. New validators can only join the active set when an already active validator unbonds.
@@ -80,7 +78,7 @@ There is limited space for accepting new validators. New validators can only joi
 
 ## Prerequisites
 
-* Two machines — one [sentry](/docs/maintain/glossary.md#sentry) and one [validator](/docs/maintain/glossary.md#validator).
+* Two machines — one [sentry](/maintain/glossary.md#sentry) and one [validator](/maintain/glossary.md#validator).
 * `build-essential` installed on both the sentry and the validator machines.
 
   To install:
@@ -150,7 +148,7 @@ Install the binaries for both on the sentry and validator machines.
 
 ### Installing Heimdall
 
-[Heimdall](/docs/pos/design/heimdall/overview) is the Proof-of-Stake verifier layer
+[Heimdall](/pos/design/heimdall/overview) is the Proof-of-Stake verifier layer
 responsible for checkpointing the representation of blocks to the Ethereum mainnet.
 
 The latest version, [Heimdall v0.3.4](https://github.com/maticnetwork/heimdall/releases/tag/v0.3.4), contains a few enhancements such as:
@@ -209,7 +207,7 @@ Before proceeding, Heimdall should be installed on both the sentry and validator
 
 ### Installing Bor
 
-[Bor](/docs/pos/design/bor) is the blockchain operator that acts as the block production layer, which syncs with Heimdall to select block producers and verifiers for each [span](/docs/maintain/glossary.md#span) and [sprint](/docs/maintain/glossary.md#sprint).
+[Bor](/pos/design/bor) is the blockchain operator that acts as the block production layer, which syncs with Heimdall to select block producers and verifiers for each [span](/maintain/glossary.md#span) and [sprint](/maintain/glossary.md#sprint).
 
 Clone the [Bor repository](https://github.com/maticnetwork/bor):
 
@@ -583,11 +581,8 @@ Save the changes in `static-nodes.json`.
 
 On Polygon, it is recommended that you keep the owner and signer keys different.
 
-* Signer — the address that signs the
-  [checkpoint transactions](/docs/maintain/glossary.md#checkpoint-transaction). The recommendation is
-  to keep at least 1 ETH on the signer address.
-* Owner — the address that does the staking transactions. The recommendation is to keep the MATIC
-  tokens on the owner address.
+* Signer — the address that signs the checkpoint transactions. The recommendation is to keep at least 1 ETH on the signer address.
+* Owner — the address that does the staking transactions. The recommendation is to keep the MATIC tokens on the owner address.
 
 ### Generating a Heimdall private key
 

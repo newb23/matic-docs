@@ -24,7 +24,7 @@ For key management, please refer to [Validator key management](/docs/pos/design/
 
 This module only manages validator staking on Heimdall. The delegation is only available on smart contracts on the Ethereum chain. To optimize the delegation rewards calculation on smart contracts, we are using validator shares (ERC20 per validator). 
 
-More details here: [Delegation (Validator shares)](/docs/pos/contracts/delegation)
+More details here: [Delegation (Validator shares)](/pos/reference/contracts/delegation)
 
 ## Rewards
 

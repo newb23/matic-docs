@@ -66,7 +66,7 @@ sudo dpkg -i rabbitmq-server_3.10.8-1_all.deb
     | **Install Ansible** | No | Yes (only on one machine) | No |
     | **Install Bash** | No | No | Yes |
     | **Run Build Essential** | Yes | No | No |
-    | **Node Setup** | [Using Binaries](/maintain/validate/run-validator-binaries.md) | [Using Ansible](/maintain/validate/run-validator-ansible.md) | [Using Packages](/maintain/validate/run-validator.md) |
+    | **Node Setup** | [Using Binaries](/pos/operate/validator/run-validator.md) | [Using Ansible](/pos/operate/validator/run-validator.md) | [Using Packages](/pos/operate/validator/run-validator.md) |
 
 2. Once your Sentry and Validator nodes are synced and running, head over to our [Discord server](https://discord.com/invite/0xPolygon) and ask the community to health-check your nodes. You may check the logs by using the following commands:
 
@@ -117,7 +117,7 @@ Below are some additional information to the official documentation which might 
 
 :::
 
-This document gives some additional details for setting up a new node based on [Full Node Deployment](/docs/operate/full-node-deployment.md) guide.
+This document gives some additional details for setting up a new node based on [Full Node Deployment](/pos/operate/node/full-node-deployment.md) guide.
 
 - VPN setup is required before proceeding with any of these steps can be done by referring [Bastillion user guide](https://www.notion.so/Bastillion-VPN-user-guide-c04f5f26afda4fa59d5d9f6041327f43).
 - If you are using Macbook, it has native Python 2.7 available which **needs to be replaced by with anything Python 3.x**.

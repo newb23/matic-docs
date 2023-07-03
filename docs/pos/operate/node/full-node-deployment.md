@@ -18,13 +18,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-This deployment guide walks you through starting and running a full node through various methods. For the system requirements, see the [Minimum Technical Requirements](technical-requirements.md) guide.
+This deployment guide walks you through starting and running a full node through various methods. For the system requirements, see the [Minimum Technical Requirements](/pos/operate/validator/validator-node-system-requirements.md) guide.
 
 :::tip Snapshots
 
 Steps in these guide involve waiting for the Heimdall and Bor services to fully sync. This process takes several days to complete.
 
-Please use snapshots for faster syncing without having to sync over the network. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](/operate/snapshot-instructions-heimdall-bor.md).
+Please use snapshots for faster syncing without having to sync over the network. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](/pos/reference/snapshot-instructions-heimdall-bor.md).
 
 For snapshot download links, see the [<ins>Polygon Chains Snapshots</ins>](https://snapshots.polygon.technology/) page.
 

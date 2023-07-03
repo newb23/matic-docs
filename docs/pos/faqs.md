@@ -444,10 +444,7 @@ wget -c <Snapshot URL>
 tar -xzvf <snapshot file> -C <HEIMDALL_DATA_DIRECTORY>
 ```
 
-Then start Heimdall services again. Refer to:
-
-* [Run a Validator Node with Ansible](/pos/operate/validator/run-validator-ansible.md)
-* [Run a Validator Node from Binaries](/pos/operate/validator/run-validator-binaries.md)
+Then start Heimdall services again. Refer to: [Run a Validator Node](/pos/operate/validator/run-validator.md)
 
 ## Heimdall shows "dpkg: error processing archive"
 
@@ -653,10 +650,7 @@ See [Getting Started](/pos/operate/validator/getting-started.md).
 
 ## How to set up a non-validating node?
 
-Check out:
-
-* [Run a Validator Node with Ansible](/pos/operate/validator/run-validator-ansible.md)
-* [Run a Validator Node from Binaries](/docs/pos/operate/validator/run-validator-binaries.md)
+Check out: [Run a Validator Node](/pos/operate/validator/run-validator)
 
 ## Why do I have to keep ETH in my signer account?
 
@@ -700,10 +694,7 @@ No. You cannot. Polygon's architecture currently does not allow validators runni
 
 ## Is there a way to run a light Bor node?
 
-There is no light node option as of now.
-
-* [Run a Full Node on a binary](/operate/full-node-binaries.md)
-* [Run a Full Node with Ansible](/operate/full-node-deployment.md)
+There is no light node option as of now. Check out: [Run a Full Node](/pos/operate/node/full-node-deployment.md)
 
 ## What is the uptime percentage calculation on the staking dashboard?
 
@@ -926,7 +917,7 @@ Steps to clear chaindata:
 1. Run the command `rm -r /var/lib/bor/data/bor/chaindata`. This command removes the chaindata directory and all its contents recursively. This step is necessary to clear any corrupted data that might be causing issues with your node.
 1. Then, run `mkdir /var/lib/bor/data/bor/chaindata`. This command creates a new, empty chaindata directory, which will be populated with the latest block data when you start syncing your node again. This step is necessary to ensure that your node has a clean slate to work with, and it won't face any issues caused by previous corrupted data.
 
-To sync from a snapshot, please follow the instructions provided [<ins>here</ins>](https://wiki.polygon.technology/docs/operate/snapshot-instructions-heimdall-bor/)
+To sync from a snapshot, please follow the instructions provided [<ins>here</ins>](/pos/reference/snapshot-instructions-heimdall-bor.md)
 
 ## How to Address a Significant Block Reorg
 

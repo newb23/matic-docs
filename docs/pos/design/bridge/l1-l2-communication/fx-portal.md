@@ -18,7 +18,7 @@ The usual mechanism to natively read Ethereum data from Polygon is using **State
 
 ## What is FxPortal?
 
-It is a powerful yet simple implementation of the Polygon [state sync](../../pos/state-sync/state-sync-mechanism.md) mechanism. The Polygon PoS bridge is built on the same architecture. The code in the [examples](https://github.com/fx-portal/contracts/tree/main/contracts/examples) folder are some examples of usage. You can easily use these examples to build your own implementations or own custom bridge which allows any state-sync without mapping.
+It is a powerful yet simple implementation of the Polygon [state sync](/pos/design/validator/core-components/state-sync-mechanism.md) mechanism. The Polygon PoS bridge is built on the same architecture. The code in the [examples](https://github.com/fx-portal/contracts/tree/main/contracts/examples) folder are some examples of usage. You can easily use these examples to build your own implementations or own custom bridge which allows any state-sync without mapping.
 
 You can check out the [GitHub repository](https://github.com/fx-portal/contracts) for contracts and examples.
 

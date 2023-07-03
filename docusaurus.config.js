@@ -109,67 +109,6 @@ module.exports = {
             to: '/docs/pos/design/bridge/l1-l2-communication/fx-portal/fx-example',
             from: '/docs/pos/l1-l2-communication/fx-portal/fx-example',
           },
-          // ethereum-polygon
-          {
-            to: '/docs/pos/design/bridge/ethereum-polygon/getting-started',
-            from: '/docs/pos/ethereum-polygon/getting-started',
-          },
-          {
-            to: '/docs/pos/design/bridge/ethereum-polygon/mintable-assets',
-            from: '/docs/pos/ethereum-polygon/mintable-assets',
-          },
-          {
-            to: '/docs/pos/design/bridge/ethereum-polygon/submit-mapping-request',
-            from: '/docs/pos/ethereum-polygon/submit-mapping-request',
-          },
-          {
-            to: '/docs/pos/design/bridge/ethereum-polygon/pos/deposit-withdraw-event-pos',
-            from: '/docs/pos/ethereum-polygon/deposit-withdraw-event-pos',
-          },
-          {
-            to: '/docs/pos/design/bridge/ethereum-polygon/pos/deployment',
-            from: '/docs/pos/ethereum-polygon/deployment',
-          },
-          {
-            to: '/docs/pos/design/bridge/ethereum-polygon/pos/getting-started',
-            from: '/docs/pos/ethereum-polygon/getting-started',
-          },
-          {
-            to: '/docs/pos/design/bridge/ethereum-polygon/pos/mapping-assets',
-            from: '/docs/pos/ethereum-polygon/mapping-assets',
-          },
-          {
-            to: '/docs/pos/design/bridge/ethereum-polygon/pos/calling-contracts/erc20',
-            from: '/docs/pos/ethereum-polygon/calling-contracts/erc20',
-          },
-          {
-            to: '/docs/pos/design/bridge/ethereum-polygon/pos/calling-contracts/erc721',
-            from: '/docs/pos/ethereum-polygon/calling-contracts/erc721',
-          },
-          {
-            to: '/docs/pos/design/bridge/ethereum-polygon/pos/calling-contracts/erc1155',
-            from: '/docs/pos/ethereum-polygon/calling-contracts/erc1155',
-          },
-          {
-            to: '/docs/pos/design/bridge/ethereum-polygon/pos/calling-contracts/ether',
-            from: '/docs/pos/ethereum-polygon/calling-contracts/ether',
-          },
-          {
-            to: '/docs/pos/design/bridge/ethereum-polygon/pos/using-sdk/erc20',
-            from: '/docs/pos/ethereum-polygon/using-sdk/erc20',
-          },
-          {
-            to: '/docs/pos/design/bridge/ethereum-polygon/pos/using-sdk/erc721',
-            from: '/docs/pos/ethereum-polygon/using-sdk/erc721',
-          },
-          {
-            to: '/docs/pos/design/bridge/ethereum-polygon/pos/using-sdk/erc1155',
-            from: '/docs/pos/ethereum-polygon/using-sdk/erc1155',
-          },
-          {
-            to: '/docs/pos/design/bridge/ethereum-polygon/pos/using-sdk/eth',
-            from: '/docs/pos/ethereum-polygon/using-sdk/eth',
-          },
           {
             to: '/docs/pos/design/bridge/ethereum-polygon/tools/widget',
             from: '/docs/pos/ethereum-polygon/tools/widget',

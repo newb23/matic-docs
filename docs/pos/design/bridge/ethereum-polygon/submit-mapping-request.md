@@ -50,7 +50,7 @@ For a successful Mainnet mapping, you may provide your token details [here](http
 
 :::tip Want a Custom Token Mapping?
 
-In case you want to [<ins>customize your token mapping</ins>](/develop/l1-l2-communication/fx-portal.md#do-i-need-a-custom-fxtunnel-implementation-), you can visit our [**<ins>FxPortal</ins>**](/develop/l1-l2-communication/fx-portal.md) documentation and use the information provided to build your FxTunnel implementation and map tokens.
+In case you want to [<ins>customize your token mapping</ins>](/pos/design/bridge/l1-l2-communication/fx-portal.md#do-i-need-a-custom-fxtunnel-implementation-), you can visit our [**<ins>FxPortal</ins>**](/pos/design/bridge/l1-l2-communication/fx-portal.md) documentation and use the information provided to build your FxTunnel implementation and map tokens.
 
 While using the **default FxPortal** tunnels, you can't modify the child contract code. In case you need a **custom child token**, you must go for your own **custom FxTunnel**.
 

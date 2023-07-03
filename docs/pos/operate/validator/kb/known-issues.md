@@ -16,12 +16,6 @@ image: https://wiki.polygon.technology/img/polygon-logo.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-:::info
-
-If you have any queries about the Validator process or facing issues with Heimdall and Bor, head over to the [<ins>Validator FAQ</ins>](/faq/validator-faq.md) page.
-
-:::
-
 ### Error: Bad block/Invalid Merkle
 
 **Description:**
@@ -98,7 +92,7 @@ If your node throws up these logs, please check the following:
 
 ### Log: Error dialing seed
 
-Please check whether your Heimdall node is configured with the latest seeds as listed on the [node setup documents](/docs/operate/full-node-deployment.md#full-node-setup).
+Please check whether your Heimdall node is configured with the latest seeds as listed on the [node setup documents](/pos/operate/node/full-node-deployment.md).
 
 If you're still encountering the error after either updating to the latest seeds or confirming that you are using the right seeds, you may need to clear the `addrbook.json` file. To do this, follow the steps below.
 

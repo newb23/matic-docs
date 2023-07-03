@@ -23,7 +23,7 @@ The Polygon Network is broadly divided into three layers:
 
 ## Staking smart contracts on Ethereum
 
-To enable the [Proof of Stake (PoS)](/docs/home/polygon-basics/what-is-proof-of-stake) mechanism on Polygon, the system employs a set of [staking](/docs/maintain/glossary.md#staking) management contracts on the Ethereum mainnet.
+To enable the Proof of Stake (PoS) mechanism on Polygon, the system employs a set of [staking](/docs/maintain/glossary.md#staking) management contracts on the Ethereum mainnet.
 
 The staking contracts implement the following features:
 

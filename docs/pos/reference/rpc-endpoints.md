@@ -64,7 +64,7 @@ The native token of the Polygon PoS is MATIC and is used for gas.
 | NetworkName                        | **Polygon**                                                      |
 | ParentChain                        | **Ethereum**                                                     |
 | chainId                            | `137`                                                            |
-| Gas Token                          | [MATIC](gas-token)                                               |
+| Gas Token                          | MATIC                                               |
 | Gas Station                        | [PolygonScan Gas Tracker (**recommended**)](https://polygonscan.com/gastracker) or [Matic Network Gas Station](https://gasstation-mainnet.matic.network/v2) (learn more [here](https://docs.polygon.technology/docs/develop/tools/polygon-gas-station/))                                                                       |
 | RPC Endpoint                       | [https://polygon-rpc.com/](https://polygon-rpc.com/)                     |
 | Node Endpoint                      | [wss://rpc-mainnet.matic.network](wss://rpc-mainnet.matic.network)       |

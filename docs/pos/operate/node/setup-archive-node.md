@@ -40,7 +40,7 @@ values={[
 
 <TabItem value="binaries">
 
-To setup the Archive Node, you need to follow the same process for deploying a [full node using binaries](/operate/full-node-deployment.md).
+To setup the Archive Node, you need to follow the same process for deploying a [full node using binaries](full-node-deployment.md).
 
 However, it requires a minor configuration change. You should include the following parameter in the `start.sh` file:
 
