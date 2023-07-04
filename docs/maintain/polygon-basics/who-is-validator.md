@@ -16,8 +16,6 @@ Validator is a participant in the network who locks up MATIC tokens in the syste
 
 Rewards are distributed to all stakers proportional to their stake at every checkpoint with the exception being the proposer getting an additional bonus. User reward balance gets updated in the contract which is referred to while claiming rewards.
 
-Stakes are at risk of getting slashed in case the validator node commits a malicious act like double signing which also affects the linked delegators at that checkpoint.
-
 :::tip
 
 Those who are interested in securing the network but are not running a full node can participate as [delegators](/docs/maintain/glossary.md#delegator).
