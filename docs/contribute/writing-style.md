@@ -51,7 +51,7 @@ The Style guide takes motivation from the following style manuals:
 
 The Wiki is built using [Docusaurus](https://docusaurus.io/), a static-site generator for
 building documentation sites in markdown. The Wiki follows the following metadata
-template for its markdown files and should be adpated for each new document:
+template for its markdown files and should be adapted for each new document:
 
 ```
 ---

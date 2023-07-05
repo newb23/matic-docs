@@ -123,7 +123,7 @@ Wiggle is the time that a producer should wait before starting to produce a bloc
 
 ### Resolving forks
 
-While the above mechanism adds to the robustness of chain to a certain extent, it introduces the possibility of forks. It could actually be possible that C produced a block, but there was a larger than expected delay in propagation and hence D also produced a block, so that leads to atleast 2 forks.
+While the above mechanism adds to the robustness of chain to a certain extent, it introduces the possibility of forks. It could actually be possible that C produced a block, but there was a larger than expected delay in propagation and hence D also produced a block, so that leads to at least 2 forks.
 
 The resolution is simple - choose the chain with higher difficulty. But then the question is how do we define difficulty of a block in our setup?
 

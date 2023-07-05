@@ -85,7 +85,7 @@ blockData := crypto.Keccak256(appendBytes32(
 // array of block hashes of Bor blocks
 headers := [blockData1, blockData2, ..., blockDataN]
 
-// merkel tre
+// merkel tree
 tree := merkle.NewTreeWithOpts(merkle.TreeOptions{EnableHashSorting: false, DisableHashLeaves: true})
 tree.Generate(convert(headers), sha3.NewLegacyKeccak256())
 

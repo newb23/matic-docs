@@ -265,7 +265,7 @@ For example,
     heimdallcli stake --staked-amount 400000000000000000000  --fee-amount 1000000000000000000 --validator 0xf8d1127780b89f167cb4578935e89b8ea1de774f
 
 
-### 18. Whats the difference between `/var/lib/heimdall` and `/etc/heimdall?`
+### 18. What's the difference between `/var/lib/heimdall` and `/etc/heimdall?`
 
 `/var/lib/heimdall` is the heimdall dir when you use the binary installation method. `/etc/heimdall` is for the Linux package installation method.
 

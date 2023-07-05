@@ -62,7 +62,7 @@ result := append(GetPulpHash("A"), txBytes[:]...), nil
 Decoding works as follows:
 
 ```go
-// retrieve type of objet based on prefix 
+// retrieve type of object based on prefix 
 rtype := typeInfos[hex.EncodeToString(incomingData[:PulpHashLength])]
 
 // create new object

@@ -31,7 +31,7 @@ Here the scheme is `did`, method name is `polygon` and method specific identifie
 
 ## Polygon DID Implementation
 
-Polygon DID can be implemented with help of two packages, user can import the respective npm libraries and use them to incorporate Polygon DID methodologies in thier respective applications. Details for implementation are provided in next section.
+Polygon DID can be implemented with help of two packages, user can import the respective npm libraries and use them to incorporate Polygon DID methodologies in their respective applications. Details for implementation are provided in next section.
 
 To get started, one first needs to create a DID. Creation in case of Polygon did is an encapsulation of two steps, first where a user needs to generate a DID uri for themselves and next register it on Polygon ledger.
 
@@ -51,7 +51,7 @@ import { createDID } from "@ayanworks/polygon-did-registrar";
 
 The `createdDID` function helps user generate a DID URI. While creating a DID, there can be two scenarios.
 
-  1. The user already owns a wallet and wishes to generate a DID correponding to the same wallet.
+  1. The user already owns a wallet and wishes to generate a DID corresponding to the same wallet.
 
     ```
     const {address, publicKey58, privateKey, DID} = await createDID(network, privateKey);
@@ -87,7 +87,7 @@ To register the DID URI and the corresponding DID document on ledger, the user f
 import { registerDID } from "@ayanworks/polygon-did-registrar";
 ```
 
-As a prerequisite to registering DID, the user needs to make sure that the wallet corrsponding to the DID has the necessary tokens balance available. Once the user has a token balance in the wallet, a call can be made to the registerDID functionality as shown below:
+As a prerequisite to registering DID, the user needs to make sure that the wallet corresponding to the DID has the necessary tokens balance available. Once the user has a token balance in the wallet, a call can be made to the registerDID functionality as shown below:
 
 ```js
 const txHash = await registerDID(did, privateKey, url?, contractAddress?);
