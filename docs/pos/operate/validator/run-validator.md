@@ -144,17 +144,16 @@ It is important to keep in mind that a sentry node must always be set up before 
 
 ## Installing the Binaries
 
-Install the binaries for both on the sentry and validator machines.
+Polygon node consists of 2 layers: Heimdall and Bor. Heimdall is a tendermint fork that monitors contracts in parallel with the Ethereum network. Bor is basically a Geth fork that generates blocks shuffled by Heimdall nodes.
 
-### Installing Heimdall
+Both binaries must be installed and run in the correct order to function properly.
 
-[Heimdall](/pos/design/heimdall/overview) is the Proof-of-Stake verifier layer
-responsible for checkpointing the representation of blocks to the Ethereum mainnet.
+### Heimdall
 
-The latest version, [Heimdall v0.3.4](https://github.com/maticnetwork/heimdall/releases/tag/v0.3.4), contains a few enhancements such as:
+Install the latest version of Heimdall and related services. Make sure you checkout to the correct [release version](https://github.com/maticnetwork/heimdall/releases). Note that the latest version, [Heimdall v0.3.4](https://github.com/maticnetwork/heimdall/releases/tag/v0.3.4), contains enhancements such as:
 1. Restricting data size in state sync txs to:
     * **30Kb** when represented in **bytes**
-    * **60Kb** when represented as **string**.
+    * **60Kb** when represented as **string**
 2. Increasing the **delay time** between the contract events of different validators to ensure that the mempool doesn't get filled very quickly in case of a burst of events which can hamper the progress of the chain.
 
 The following example shows how the data size is restricted:
@@ -166,36 +165,19 @@ Hex Byte representation - [171 205 18 52]
 Length in byte format - 4
 ```
 
-Clone the [Heimdall repository](https://github.com/maticnetwork/heimdall/):
+To install **Heimdall**, run the below commands:
 
-```sh
-git clone https://github.com/maticnetwork/heimdall
+```bash
+curl -L https://raw.githubusercontent.com/maticnetwork/install/main/heimdall.sh | bash -s -- <heimdall_version> <network_type> <node_type>
 ```
 
-Navigate to the correct [release version](https://github.com/maticnetwork/heimdall/releases):
+**heimdall_version**: `valid v0.3+ release tag from https://github.com/maticnetwork/heimdall/releases`
+**network_type**: `mainnet` and `mumbai`
+**node_type**: `sentry`
 
-```sh
-git checkout RELEASE_TAG
-```
+That will install the `heimdalld` and `heimdallcli` binaries. Verify the installation by checking the Heimdall version on your machine:
 
-where `RELEASE_TAG` is the tag of the release version that you install.
-
-For instance:
-
-```sh
-git checkout v0.3.4
-```
-
-Once you are on the correct release, install Heimdall:
-
-```sh
-make install
-source ~/.profile
-```
-
-Check the Heimdall installation:
-
-```sh
+```bash
 heimdalld version --long
 ```
 
@@ -207,44 +189,19 @@ Before proceeding, Heimdall should be installed on both the sentry and validator
 
 ### Installing Bor
 
-[Bor](/pos/design/bor) is the blockchain operator that acts as the block production layer, which syncs with Heimdall to select block producers and verifiers for each [span](/maintain/glossary.md#span) and [sprint](/maintain/glossary.md#sprint).
+Install the latest version of Bor, based on valid v0.3+ [released version](https://github.com/maticnetwork/bor/releases).
 
-Clone the [Bor repository](https://github.com/maticnetwork/bor):
-
-```sh
-git clone https://github.com/maticnetwork/bor
+```bash
+curl -L https://raw.githubusercontent.com/maticnetwork/install/main/bor.sh | bash -s -- <bor_version> <network_type> <node_type>
 ```
 
-Navigate to the correct [release version](https://github.com/maticnetwork/bor/releases):
+**bor_version**: `valid v0.3+ release tag from https://github.com/maticnetwork/bor/releases`
+**network_type**: `mainnet` and `mumbai`
+**node_type**: `sentry`
 
-```sh
-git checkout RELEASE_TAG
-```
+That will install the `bor` binary. Verify the installation by checking the Bor version on your machine:
 
-where `RELEASE_TAG` is the tag of the release version that you install.
-
-For instance:
-
-```sh
-git checkout v0.4.0
-```
-
-Install Bor:
-
-```sh
-make bor-all
-```
-
-Create symlinks:
-
-```sh
-sudo ln -nfs ~/bor/build/bin/bor /usr/bin/bor
-sudo ln -nfs ~/bor/build/bin/bootnode /usr/bin/bootnode
-```
-
-Check the Bor installation:
-
-```sh
+```bash
 bor version
 ```
 
@@ -253,116 +210,6 @@ bor version
 Before proceeding, Bor should be installed on both the sentry and validator machines.
 
 :::
-
-## Setting Up Node Files
-
-:::note
-
-Node files need to be set up on both the sentry and validator machines.
-
-:::
-
-### Fetching the launch repository
-
-Clone the [launch repository](https://github.com/maticnetwork/launch):
-
-```sh
-git clone https://github.com/maticnetwork/launch
-```
-
-### Setting up the launch directory
-
-#### On the sentry machine
-
-Create a `node` directory:
-
-```sh
-mkdir -p node
-```
-
-Copy the files and scripts from the `launch` directory to the `node` directory:
-
-```sh
-cp -rf launch/mainnet-v1/sentry/sentry ~/node
-cp launch/mainnet-v1/service.sh ~/node
-```
-
-#### On the validator machine
-
-Create a `node` directory:
-
-```sh
-mkdir -p node
-```
-
-Copy the files and scripts from the `launch` directory to the `node` directory:
-
-```sh
-cp -rf launch/mainnet-v1/sentry/validator ~/node
-cp launch/mainnet-v1/service.sh ~/node
-```
-
-### Setting up the network directories
-
-:::note
-
-Run this section both on the sentry and validator machines.
-
-:::
-
-#### Setting up Heimdall
-
-Change to the `node` directory:
-
-```sh
-cd ~/node/heimdall
-```
-
-Run the setup script:
-
-```sh
-bash setup.sh
-```
-
-#### Setting up Bor
-
-Change to the `node` directory:
-
-```sh
-cd ~/node/bor
-```
-
-Run the setup script:
-
-```sh
-bash setup.sh
-```
-
-## Setting Up the Services
-
-:::note
-
-Run this section both on the sentry and validator machines.
-
-:::
-
-Navigate to the `node` directory:
-
-```sh
-cd ~/node
-```
-
-Run the setup script:
-
-```sh
-bash service.sh
-```
-
-Copy the service file to the system directory:
-
-```sh
-sudo cp *.service /etc/systemd/system/
-```
 
 ## Configuring the Sentry Node
 
