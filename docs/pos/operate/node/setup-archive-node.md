@@ -93,13 +93,13 @@ Run the following commands to install Erigon:
 ```bash
 git clone --recurse-submodules -j8 https://github.com/maticnetwork/erigon.git
 cd erigon
-git checkout v0.0.6
+git checkout v0.0.8
 make erigon
 ```
 
 This should create the binary at `./build/bin/erigon`
 
-Use the tag `v0.0.6` on our forked repo to have a stable version. 
+Use the tag `v0.0.8` on our forked repo to have a stable version. 
 
 ## Start Erigon Client
 
