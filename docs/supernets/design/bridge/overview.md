@@ -15,7 +15,7 @@ keywords:
 
 ## Overview
 
-Supernets provide a built-in bridging mechanism that enables cross-chain communication. The bridging mechanism is a technical infrastructure that facilitates the transfer of of arbitrary messages between any EVM-compatible PoS blockchain (rootchain), and a Supernet. 
+Supernets provide a built-in bridging mechanism that enables cross-chain communication. The bridging mechanism is a technical infrastructure that facilitates the transfer of arbitrary messages between any EVM-compatible PoS blockchain (rootchain), and a Supernet. 
 
 It relies on mapping between the token contracts on the rootchain and the target chain, which is crucial for tracking assets and ensuring the correct amount of tokens are minted and burned during the transfer process.
 
