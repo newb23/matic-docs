@@ -900,7 +900,7 @@ In this section, we will go through steps to initialize and customize configurat
 
 :::caution
 
-Bor and Heimdall 0.3.0 use standardized paths for configuration files and chain data. If you have existing
+Bor and Heimdall 0.3.0+ use standardized paths for configuration files and chain data. If you have existing
 config files and chain data on your node, please skip the [Configure Heimdall](#configure-heimdall) section below and jump directly to **[Migration](#upgrade-from-02x-to-03x) section** to learn about migrating configs and data to standardized file locations.
 
 :::
