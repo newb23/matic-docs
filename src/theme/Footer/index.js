@@ -1,10 +1,3 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 import React from 'react';
 import classnames from 'classnames';
 
@@ -39,11 +32,11 @@ const FooterLogo = ({url, alt}) => (
 
 function Footer() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
-  const {themeConfig = {}} = siteConfig;
-  const {footer} = themeConfig;
+  const { siteConfig = {} } = context;
+  const { themeConfig = {} } = siteConfig;
+  const { footer } = themeConfig;
 
-  const {copyright, links = [], logo = {}} = footer || {};
+  const { copyright, links = [], logo = {} } = footer || {};
   const logoUrl = useBaseUrl(logo.src);
 
   if (!footer) {
@@ -54,40 +47,42 @@ function Footer() {
     <footer
       className={classnames('footer', {
         'footer--dark': footer.style === 'dark',
-      })}>
+      })}
+    >
       <div className="container">
-        {links && links.length > 0 && (
-          <div className="row footer__links">
-            {links.map((linkItem, i) => (
-              <div key={i} className="col footer__col">
-                {linkItem.title != null ? (
-                  <h4 className="footer__title">{linkItem.title}</h4>
-                ) : null}
-                {linkItem.items != null &&
-                Array.isArray(linkItem.items) &&
-                linkItem.items.length > 0 ? (
-                  <ul className="footer__items">
-                    {linkItem.items.map((item, key) =>
-                      item.html ? (
-                        <li
-                          key={key}
-                          className="footer__item"
-                          dangerouslySetInnerHTML={{
-                            __html: item.html,
-                          }}
-                        />
-                      ) : (
-                        <li key={item.href || item.to} className="footer__item">
-                          <FooterLink {...item} />
-                        </li>
-                      ),
-                    )}
-                  </ul>
-                ) : null}
-              </div>
-            ))}
-          </div>
-        )}
+        <div className="row">
+          {links.map((linkItem, i) => (
+            <div key={i} className="col footer__col">
+              {linkItem.title != null ? (
+                <h4 className="footer__title">{linkItem.title}</h4>
+              ) : null}
+              {linkItem.items != null &&
+              Array.isArray(linkItem.items) &&
+              linkItem.items.length > 0 ? (
+                <div className="footer__items">
+                  {linkItem.items.map((item, key) =>
+                    item.html ? (
+                      <div
+                        key={key}
+                        className="footer__item"
+                        dangerouslySetInnerHTML={{
+                          __html: item.html,
+                        }}
+                      />
+                    ) : (
+                      <div
+                        key={item.href || item.to}
+                        className="footer__item"
+                      >
+                        <FooterLink {...item} />
+                      </div>
+                    )
+                  )}
+                </div>
+              ) : null}
+            </div>
+          ))}
+        </div>
         {(logo || copyright) && (
           <div className="text--center">
             {logo && logo.src && (
@@ -97,7 +92,8 @@ function Footer() {
                     href={logo.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={styles.footerLogoLink}>
+                    className={styles.footerLogoLink}
+                  >
                     <FooterLogo alt={logo.alt} url={logoUrl} />
                   </a>
                 ) : (
@@ -112,5 +108,6 @@ function Footer() {
     </footer>
   );
 }
+
 
 export default Footer;

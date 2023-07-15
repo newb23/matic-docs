@@ -1,0 +1,70 @@
+---
+id: index
+title: Welcome
+hide_title: true
+sidebar_label: Welcome
+---
+
+import classnames from "classnames";
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import styles from "../../src/pages/styles.module.css";
+import { Container, Row, Col } from 'react-bootstrap';
+
+export function FirstRow({ title, status, description, linkUrl, imageUrl }) {
+  return (
+    <div className="col-md-4 p-8">
+      <Link to={linkUrl} activeClassName="active">
+        <div className="show-card">
+          <div className="icon-wrapper">
+            <img src={imageUrl} alt={title} className="icon" />
+          </div>
+          <div className="status">{status}</div>
+          <div className="title">{title}</div>
+          <div className="descriptions">{description}</div>
+        </div>
+      </Link>
+    </div>
+  );
+}
+
+export const Welcome = () => {
+  const context = useDocusaurusContext();
+  return (
+    <Layout noNavbar={true} noFooter={true}>
+      <div className="bootstrap-wrapper">
+        <br />
+        <div className="container">
+          <div className="row">
+            <div className="index-page exclude">
+            <section className="section container-fluid">
+            <div className="row justify-content-center">
+              <div className="col-lg-8">
+                <h1 className="mt-0">
+                  <a href="https://polygon.technology/polygon-supernets" className="landing-page-link">
+                    Governance
+                  </a>{" "}
+                  Wiki
+                </h1>
+                <p>The documentation hub for comprehensive resources and guides for enthusiasts and developers navigating Polygon's governance.</p>
+                <h3 className="mt-0">Polygon Improvement Proposal (PIP) Process</h3>
+                <p className="lead">
+                As an integral part of the Polygon 2.0 vision, the PIP process invites developers and community members to propose enhancements and new features. Proposals are initially considered pre-PIPs until they reach a spec-level state with community support.
+                </p>
+                <p className="lead">
+                To foster active PIP participation, a new bounty program incentivizes the creation, submission, and finalization of impactful PIPs. The program boasts $40,000 in total awards for 2023, and the Polygon Labs Governance team manages proposal evaluation and fund allocation.
+                </p>
+              </div>
+            </div>
+            </section>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
+};
+
+export default Welcome;

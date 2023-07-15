@@ -1,0 +1,63 @@
+.primary-btn {
+    display: block;
+    width: 360px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #362f55;
+    border-radius: 10px;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding: 0 20px;
+  }
+  
+  .primary-btn:hover {
+    background-color: #322b50;
+    box-shadow: 0 10px 20px rgba(108, 92, 235, 0.4);
+  }
+  
+  .primary-btn:active {
+    box-shadow: none;
+    background-color: #292441;
+  }
+  
+  .primary-btn span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+  }
+  
+  .download-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+  }
+  
+  .download-text p {
+    margin: 0;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  
+  .download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (max-width: 767px) {
+    .download-container {
+      flex-direction: column;
+    }
+  
+    .download-text {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }

@@ -1,68 +1,71 @@
 export const firstRow = [
     {
-        title: "Blockchain Basics",
-        linkUrl: "docs/home/new-to-polygon",
-        imageUrl: "img/home/blockchain-basics.svg",
-        description: "Learn about Blockchain and Polygon"
+        title: "Build a dApp on PoS",
+        linkUrl: "docs/category/deploy-a-contract",
+        imageUrl: "img/logo-round-dark.png",
+        description: "Empower the world by building next-gen dApps using Polygon's PoS mainnet."
     },
     {
-        title: "Dapp Developers",
-        linkUrl: "docs/develop/getting-started",
-        imageUrl: "img/home/dapp-developers.svg",
-        description: "Complete information including easy tutorials you need to build, deploy, and manage apps on Polygon"
+        title: "Build a dApp on zkEVM",
+        linkUrl: "https://zkevm.polygon.technology/docs/develop",
+        imageUrl: "img/logo-round-dark.png",
+        description: "Empower the world by building next-gen dApps using ZK tech."
     },
     {
-        title: "Polygon Edge",
-        class_name: "polygon-banner",
-        linkUrl: "https://sdk-docs.polygon.technology/docs/overview/",
-        imageUrl: "img/home/polygon-sdk.svg",
-        description: "A modular and extensible framework for building Ethereum-compatible blockchain networks."
+        title: "Build a Supernet",
+        linkUrl: "/docs/category/build-a-supernet",
+        imageUrl: "img/logo-round-dark.png",
+        description: "Learn how to build a fully-fleged appchain with Polygon Supernets."
     },
-
+    {
+        title: "Run a PoS node",
+        linkUrl: "docs/category/operate-a-node",
+        imageUrl: "img/logo-round-dark.png",
+        description: "Contribute to decentralized computing by running your own PoS node."
+    },
+    {
+        title: "Run a zkEVM node",
+        linkUrl: "https://zkevm.polygon.technology/docs/category/setup-zknode",
+        imageUrl: "img/logo-round-dark.png",
+        description: "Contribute to decentralized computing by running your own ZK node."
+    },
+    {
+        title: "Run a Miden VM",
+        linkUrl: "docs/miden/user_docs/usage",
+        imageUrl: "img/logo-round-dark.png",
+        description: "Contribute to decentralized computing by running a Miden VM."
+    },
 ];
 
 export const secondRow = [
     {
-        title: "Validators",
-        linkUrl: "docs/maintain/polygon-basics/who-is-validator",
-        imageUrl: "img/home/core-contribution.svg",
-        description: 'Learn how to stake with Polygon, and setup you own nodes to maintain the network and earn rewards'
+        title: "PoS",
+        linkUrl: "docs/pos/polygon-architecture",
+        imageUrl: "img/pos-logo.png",
+        description: "Proof-of-Stake scaling solution for Ethereum-based public blockchain networks."
     },
     {
-        title: "Integration ",
-        linkUrl: "docs/integrate/quickstart",
-        imageUrl: "img/home/integration.svg",
-        description: "Key information for projects looking to integrate with Polygon. Wallets, developer tools, oracles and more - get all the info you need"
+        title: "zkEVM",
+        linkUrl: "docs/zkEVM/introduction",
+        imageUrl: "img/zkevm-logo.png",
+        description: "First source-available ZK-Rollup with Ethereum's security & full EVM opcode equivalence."
     },
     {
-        title: "Core Contributors",
-        linkUrl: "docs/contribute/orientation",
-        imageUrl: "img/home/core-contributors.svg",
-        description: "Contribute and get involved with the Polygon code base. Spin up a local testnet, or just submit a Pull Request on one of our repos"
-    }
-];
-
-export const thirdRow = [
-    {
-        title: "Key Management",
-        // imageUrl: [{card:"img/basic.svg" , basic:"img/basic.svg"}],
-        description: "Connect to Web3!!!"
+        title: "Supernets",
+        linkUrl: "docs/supernets/overview",
+        imageUrl: "img/supernets-logo.png",
+        description: "Application-specific blockchain networks that are secure, interoperable, and scalable."
     },
     {
-        title: "Meta Transactions",
-        // imageUrl: [{card:"img/basic.svg" , basic:"img/basic.svg"}],
-        description: "Gasless Transactions on Polygon Chain!!!"
+        title: "Miden",
+        linkUrl: "docs/miden/intro/main",
+        imageUrl: "img/miden-logo.png",
+        description: "STARK-based ZK-Rollup solution that supports arbitrary smart contracts."
     },
     {
-        title: "Realtime Updates",
-        // imageUrl: [{card:"img/basic.svg" , basic:"img/basic.svg"}],
-        description: 'Realtime updates from Ethereum Blockchain'
-    },
-    {
-        title: "Ethereum ↔️ Polygon",
-        // imageUrl: [{card:"img/basic.svg" , basic:"img/basic.svg"}],
-        description: "Interact with Ethereum and Polygon Chain"
+        title: "ID",
+        linkUrl: "https://0xpolygonid.github.io/tutorials/",
+        imageUrl: "img/id-logo.png",
+        description: "Scalable blockchain-native identity and authentication solution with ZK-based privacy."
     },
 ];
-
-
